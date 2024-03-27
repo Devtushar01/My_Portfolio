@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    color:white;
 }
 .wrapper{
     height:100vh;
     width:100vw;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: rgb(26, 28, 44);
+    background-color: rgb(3, 4, 10);
 }
 .navbar{
     height:10%;
@@ -18,6 +20,8 @@
     justify-content:space-between;
     padding-top: 10px;
     background: linear-gradient(to left ,rgb(86, 49, 146), rgba(34, 26, 80, 0.418));
+    position:fixed;
+    z-index: 1;
 }
 .navbar-items{
     display:flex;
@@ -41,3 +45,135 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 40px;
 }
+
+.homepage{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 150px;
+    margin-top: 60px;
+ 
+
+}
+.left-sec{
+    height:275px;
+    width:450px;
+    display:flex;
+    flex-direction: column;
+    color:white;
+    justify-content: center;
+    gap:2rem;
+    border-radius: 25px;
+    padding-top:10px;
+    font-size: 25px;
+
+}
+.left-sec span {
+    color:rgb(184, 79, 253);
+ 
+}
+
+
+ .left-sec a{
+   text-decoration: none;
+   color:white;
+   height:155px;
+   width:150px;
+  
+   text-align: center;
+   border-radius: 200px;
+   background-color: rgb(124, 50, 124);
+   box-shadow: 1px 1px 4px rgb(133, 112, 155);
+}
+#sec1{
+    height: 100%;
+    width: 100%;
+ }
+#about{
+  color:white;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 3px 3px 30px rgb(84, 163, 177);
+}
+.container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    margin-top: 100px;
+}
+.container .left{
+   height:400%;
+   width:500px;
+   color:white;
+   font-size: 1.3rem;
+   font-weight: 400;
+}
+.container .right{
+    height:300px;
+    width:300px;
+    background-image: url(images/my_pic.jpeg);
+    background-size: cover;
+    margin-bottom: 30px;
+    border-radius: 15px;
+   box-shadow: 1px 1px 710px rgb(65, 71, 150);
+ }
+ #skills{
+    height:100%;
+    width:100%;
+    margin: 0 auto;
+   
+ }
+ .sec2-skill{
+    color:white;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 3px 3px 30px rgb(209, 160, 25);
+ }
+ #skills .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+ 
+    gap:2rem;
+    flex-wrap:wrap;
+ }
+ #skills .container .box{
+    height: 200px;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap:10px;
+   
+ }
+ #skills .container .box  img{
+    height:100px;
+    width:100px;
+    background-size: cover;
+    border-radius: 50%;
+    animation: rotate  3s linear 1s infinite;
+    box-shadow: 1px 1px 18px rgb(201, 86, 216);
+ }
+ @keyframes rotate{
+    0%{ transform: rotateX(0deg) ;
+        cursor: pointer;
+    }
+    100%{
+        transform: rotateY(360deg) ;
+            cursor: pointer;
+       }
+        
+    }
+ #skills .container .box  .p{
+   width:200px;
+   height:10px;
+   border:1px solid white;
+   border-radius: 10px;
+ background: linear-gradient(to left ,rgb(86, 49, 146), rgba(34, 26, 80, 0.418));
+ }

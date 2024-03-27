@@ -5,29 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/fevicon.png">
 </head>
 <body>
     <div class="wrapper">
      <div class="navbar">
         <p class="text">Portfolio</p>
         <div class="navbar-items">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="/">Contact Us</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Us</a>
         </div>
      </div>
+   <div class="homepage" id="home">
+    <div class="left-sec">
+        <div class="head">"Hey I am Tushar Gupta"</div>
+        <div>
+            I am a <span class="span" id="element"> </span>
+        </div>
+       <div class="sub-head">
+        Here is my portfolio website. Here you'll learn about my journey as a software developer.
+       </div>
+        
+            <a href="images/Resume (2).pdf" download="">Resume</a>
+        
+    </div>
+    <div class="rightsec">
+        <img src="images/dev.png" alt="">
+    </div>
+   </div>
 
-  
 
+<section id="sec1">
+    <h1 id="about">ABOUT</h1>
+    <div class="container">
+        <div class="left">
+              <p>
+               "Hello, I'm Tushar Gupta, a final year B.Tech student specializing in the IT branch. As a fresher with a passion for technology, I am keenly interested in pursuing a career as a full-stack developer."
+                <br><br>
+                 "My journey in the world of programming has fueled my enthusiasm for creating innovative solutions and enhancing user experiences."
+                 <br><br>
+                 "I possess a strong foundation in programming languages such as Java, JavaScript, HTML, CSS, and Python, along with experience in database management systems. My goal is to leverage these skills to contribute effectively to dynamic projects and collaborate with like-minded professionals."  
+                </p>    
+        </div>
+            <div class="right"></div>  
+    </div>
+</section>
 
-
-
-
-
-
+<section id="skills">
+    <h1 class="sec2-skill">Skills</h1>
+    <div class="container">
+        <div class="box">
+            <img src="images/html.png" alt="">
+            <div class="p"></div>
+        </div>
+        <div class="box">
+            <img src="images/css.png" alt="">
+            <div class="p"></div>
+        </div>
+        <div class="box">
+            <img src="images/js.png" alt="">
+            <div class="p"></div>
+        </div>
+        <div class="box">
+            <img src="images/tailwind.png" alt="">
+            <div class="p"></div>
+        </div>
+        <div class="box">
+            <img src="images/reaact.png" alt="">
+            <div class="p"></div>
+        </div>
+        <div class="box">
+            <img src="images/node.png" alt="">
+            <div class="p"></div>
+        </div>
+        <div class="box">
+            <img src="images/java.png" alt="">
+            <div class="p"></div>
+        </div>
+        <div class="box">
+            <img src="images/sql.png" alt="">
+            <div class="p"></div>
+        </div>
+        <div class="box">
+            <img src="images/git.png" alt="">
+           <div class="p"></div>
+        </div>
+    </div>
+</section>
+<section id="projects"></section>
+   
 </div>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer' , 'Full Stack Developer' , 'Fronted Developer' ],
+      typeSpeed: 70,
+    });
+  </script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
